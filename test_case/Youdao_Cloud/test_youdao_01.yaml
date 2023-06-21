@@ -1,0 +1,9 @@
+-
+  caps:
+    automationName: UiAutomator2
+    platformName: Android
+    platformVersion: '6.0'
+    deviceName: Samsung
+    appPackage: com.youdao.note
+    appActivity: .activity2.MainActivity
+  positioning: com.android.packageinstaller:id/permission_allow_button

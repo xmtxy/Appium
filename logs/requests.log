@@ -1,0 +1,38 @@
+2023-06-21 11:08:38,105 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:118] - ----------------appium UI自动化测试开始----------------
+2023-06-21 11:08:38,106 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:119] - 用例的名称是：新增有道云笔记_01
+2023-06-21 11:08:38,106 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:120] - 用例的所属模块是：新增模块
+2023-06-21 11:08:38,106 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:121] - 用例的Data是：{'title': '标题_01', 'content': '内容_01'}
+2023-06-21 11:08:50,187 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:175] - 用例的响应信息是：标题_01
+2023-06-21 11:08:50,188 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:176] - 用例的断言信息是：标题_01
+2023-06-21 11:08:50,189 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:179] - ----------------appium UI自动化测试结束----------------
+
+2023-06-21 11:08:50,218 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:118] - ----------------appium UI自动化测试开始----------------
+2023-06-21 11:08:50,219 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:119] - 用例的名称是：新增有道云笔记_02
+2023-06-21 11:08:50,220 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:120] - 用例的所属模块是：新增模块
+2023-06-21 11:08:50,220 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:121] - 用例的Data是：{'title': '标题_02', 'content': '内容_02'}
+2023-06-21 11:08:57,063 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:175] - 用例的响应信息是：标题_02
+2023-06-21 11:08:57,063 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:176] - 用例的断言信息是：标题_02
+2023-06-21 11:08:57,064 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:179] - ----------------appium UI自动化测试结束----------------
+
+2023-06-21 11:08:57,091 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:118] - ----------------appium UI自动化测试开始----------------
+2023-06-21 11:08:57,092 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:119] - 用例的名称是：输入的内容和标题为空-新增笔记
+2023-06-21 11:08:57,092 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:120] - 用例的所属模块是：新增模块
+2023-06-21 11:08:57,092 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:121] - 用例的Data是：{'title': '标题_03', 'content': 'xx'}
+2023-06-21 11:09:03,899 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:175] - 用例的响应信息是：标题_03
+2023-06-21 11:09:03,900 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:176] - 用例的断言信息是：标题_02
+2023-06-21 11:09:03,900 INFO [xM_Appium_UI_Test] [send_appium.py (contains_assert:204] - 断言失败：返回的结果 标题_03 中不包含：标题_02
+2023-06-21 11:09:03,901 ERROR [xM_Appium_UI_Test] [send_appium.py (all_send_appium:181] - appium 自动化测试报错！
+Traceback (most recent call last):
+  File "D:\PythonPc_App\Appium\common\send_appium.py", line 178, in all_send_appium
+    self.assert_result(self.test_yaml['validate'], Response_Text)  # 调用下面的方法处理
+  File "D:\PythonPc_App\Appium\common\send_appium.py", line 197, in assert_result
+    assert all_flag == 0  # True表示断言通过
+AssertionError
+2023-06-21 11:09:04,597 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:118] - ----------------appium UI自动化测试开始----------------
+2023-06-21 11:09:04,597 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:119] - 用例的名称是：新增有道云笔记_03
+2023-06-21 11:09:04,597 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:120] - 用例的所属模块是：新增模块
+2023-06-21 11:09:04,598 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:121] - 用例的Data是：{'title': '标题_04', 'content': '内容_04'}
+2023-06-21 11:09:10,880 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:175] - 用例的响应信息是：标题_04
+2023-06-21 11:09:10,881 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:176] - 用例的断言信息是：标题_04
+2023-06-21 11:09:10,881 INFO [xM_Appium_UI_Test] [send_appium.py (all_send_appium:179] - ----------------appium UI自动化测试结束----------------
+

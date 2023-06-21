@@ -1,0 +1,11 @@
+-
+  data:
+    automationName: UiAutomator2
+    platformName: $ddt{platformName}
+    platformVersion: $ddt{platformVersion}
+    deviceName: $ddt{deviceName}
+    appPackage: $ddt{appPackage}
+    appActivity: $ddt{appActivity}
+  parameterize:
+    platformName-platformVersion-deviceName-appPackage-appActivity: /data_list/Pm_YouDao_02.yaml
+  positioning: com.android.packageinstaller:id/permission_allow_button

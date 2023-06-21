@@ -1,0 +1,82 @@
+"""
+    # 0.初始化
+    def __init__(self, data):
+        self.driver = DriverClient().getDriver()
+        self.test_yaml = data
+        self.baseoperate = BaseOperate(self.driver)
+
+    # 1.实现元素定位
+    def onLocator(self, loc):  # loc是定位方式和值
+        try:
+            WebDriverWait(self.driver, 3, 1).until(
+                lambda x: x.find_element(*loc))
+            return self.driver.find_element(*loc)
+        except Exception as e:
+            raise e
+
+    # 2.输入
+    def onInput(self, loc, value):
+        try:
+            self.find_element(*loc).clear()
+            self.onLocator(loc).send_keys(value)
+        except Exception as e:
+            raise e
+
+    # 3.点击
+    def onClick(self, loc):
+        try:
+            self.onLocator(loc).click()
+        except Exception as e:
+            raise e
+
+    # 4.获取 testcase 的长度,方便后期的遍历
+    def caselen(self):
+        length = len(self.test_yaml['testcase'])
+        return length
+
+    # 5.获取yaml中的定位元素
+    def get_elementinfo(self, i):
+        return self.test_yaml['testcase'][i]['element_info']
+
+    # 6.获取yaml中定位方式(id,name,xpath,class....)
+    def get_findtype(self, i):
+        return self.test_yaml['testcase'][i]['find_type']
+
+    # 7.获取yaml中元素触发方式(click\send_keys\text)
+    def get_operate_type(self, i):
+        return self.test_yaml['testcase'][i]['operate_type']
+
+    # 处理新增逻辑时第二次新增元素变化的处理情况
+    def element_index(self, i):
+        if self.get_findtype(i) == 'index':
+            # print(self.test_yaml['testcase'][i]['element_index'])
+            return self.test_yaml['testcase'][i]['element_index']
+        else:
+            pass
+
+    # 8.获取yaml中元素ids定位方式的 index 值
+    def get_index(self, i):
+        if self.get_findtype(i) == 'ids':
+            return self.test_yaml['testcase'][i]['index']
+        else:
+            pass
+
+    # 9.获取yaml中元素 send_keys 的输入文本信息
+    def get_send_content(self, i):
+        if self.get_operate_type(i) == 'send_keys':
+            return self.test_yaml['testcase'][i]['send_content']
+        else:
+            pass
+
+    # 10.获取yaml中元素 的返回或向上滑动的 次数
+    def get_backtimes(self, i):
+        if self.get_operate_type(i) == 'back' or self.get_operate_type(i) == 'swipe_up':
+            return self.test_yaml['testcase'][i]['times']
+        else:
+            pass
+
+    # 11.获取yaml中测试用例的名称(可用于allure报告的标题...
+    def get_title(self):
+        return self.test_yaml['testinfo']['Name']
+    """
+

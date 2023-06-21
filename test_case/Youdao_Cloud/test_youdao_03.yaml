@@ -1,0 +1,45 @@
+-
+  testinfo:
+    Id: $ddt{id}
+    Name: $ddt{name}
+    Module: $ddt{module}
+    step: $ddt{describe}
+  parameterize:
+    id-name-module-title-content-assert_str-describe: /data_list/Pm_YouDao_03.yaml
+  testcase:
+      -
+        element_info: com.youdao.note:id/add_note
+        find_type: id
+        operate_type: click
+      -
+        element_info: com.youdao.note:id/add_note_floater_add_note
+        find_type: id
+        operate_type: click
+      -
+        element_info: com.youdao.note:id/btn_cancel
+        find_type: index
+        operate_type: click
+        element_index: $ddt{id}
+      -
+        element_info: //*[@resource-id='com.youdao.note:id/note_content']/android.widget.EditText
+        find_type: xpath
+        operate_type: send_keys
+        send_content: $ddt{content}
+      -
+        element_info: com.youdao.note:id/note_title
+        find_type: id
+        operate_type: send_keys
+        send_content: $ddt{title}
+      -
+        element_info: com.youdao.note:id/actionbar_complete_text
+        find_type: id
+        operate_type: click
+      -
+        element_info: com.youdao.note:id/title
+        find_type: id
+        operate_type: text
+  data:
+    title: $ddt{title}
+    content: $ddt{content}
+  validate:
+    - contains: $ddt{assert_str}

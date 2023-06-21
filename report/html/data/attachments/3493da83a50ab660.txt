@@ -1,0 +1,7 @@
+INFO     xM_Appium_UI_Test:send_appium.py:118 ----------------appium UI自动化测试开始----------------
+INFO     xM_Appium_UI_Test:send_appium.py:119 用例的名称是：新增有道云笔记_01
+INFO     xM_Appium_UI_Test:send_appium.py:120 用例的所属模块是：新增模块
+INFO     xM_Appium_UI_Test:send_appium.py:121 用例的Data是：{'title': '标题_01', 'content': '内容_01'}
+INFO     xM_Appium_UI_Test:send_appium.py:175 用例的响应信息是：标题_01
+INFO     xM_Appium_UI_Test:send_appium.py:176 用例的断言信息是：标题_01
+INFO     xM_Appium_UI_Test:send_appium.py:179 ----------------appium UI自动化测试结束----------------

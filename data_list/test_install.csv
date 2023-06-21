@@ -1,0 +1,3 @@
+﻿编号,Android版本号,测试手机名称,被测app的包名,appActivity
+1,7.1.2,M2007J22C,com.android.launcher3,.launcher3.Launcher
+2,7.1.2,M2007J22C,com.android.launcher3,.launcher3.Launcher

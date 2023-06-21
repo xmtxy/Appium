@@ -1,0 +1,4 @@
+# DDT(data driver test)数据驱动yaml文件，对应的yaml测试用例文件为：test_youdao_02.yaml
+- ['platformName','platformVersion','deviceName','appPackage','appActivity']
+- ['Android','6.0','Samsung','com.youdao.note','.activity2.MainActivity']
+- ['Android','6.0','Samsung','com.youdao.note','.activity2.MainActivity']
